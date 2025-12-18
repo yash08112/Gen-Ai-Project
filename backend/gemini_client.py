@@ -18,7 +18,7 @@ class GeminiClient:
     def __init__(self):
         if not GeminiClient._initialized:
             # Gemini API key - get from environment variable or use default for local dev
-            API_KEY = os.getenv('GEMINI_API_KEY', "AIzaSyBBDG-tGCbYYQqt9fUJai3-Sz9tWP6Puv4")
+            API_KEY = os.getenv('GEMINI_API_KEY', "AIzaSyB4MAhuWIL9ejn7_PqEF_OKC6K6bz83-NU")
             genai.configure(api_key=API_KEY)
             
             # Store these for potential model switching
